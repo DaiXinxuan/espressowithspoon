@@ -1,5 +1,7 @@
 # Google Espresso
-## 1.Modify build.gradle
+
+[How to Use Espresso v2.0 with Testdroid Cloud Devices](http://testdroid.com/news/how-to-use-espresso-v2-0-with-testdroid-cloud-devices)
+### 1.Modify build.gradle
 * Add 'testInstrumentationRunner"android.support.test.runner.AndroidJUnitRunner"' in defaultConfig
 * Add packagingOptions to avoid Liscens conflict
 * Add dependencies about Espresso

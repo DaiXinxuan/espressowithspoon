@@ -64,8 +64,9 @@ public class MainActivityTest {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        onView(withText(activity.getString(R.string.empty_user)))
-                .inRoot(withDecorView(not(is(activity.getWindow().getDecorView())))).check(matches(isDisplayed()));
+        onView(withText (activity.getString(R.string.empty_user) ))
+                .inRoot(withDecorView( not(is(mActivityRule.getActivity().getWindow().getDecorView()))))
+                .check(matches(isDisplayed ()));
 
     }
 
