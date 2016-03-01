@@ -22,6 +22,7 @@ import com.philips.pins.espresso.demo.R;
  * Created by 310231492 on 2016/3/1.
  */
 public class CircleImageView extends ImageView {
+
     private static final ScaleType SCALE_TYPE = ScaleType.CENTER_CROP;
 
     private static final Bitmap.Config BITMAP_CONFIG = Bitmap.Config.ARGB_8888;
@@ -59,16 +60,21 @@ public class CircleImageView extends ImageView {
         this(context, attrs, 0);
     }
 
-    public CircleImageView(Context context, AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
+    public CircleImageView(Context context, AttributeSet attrs, int defStyle) {
+        super(context, attrs, defStyle);
         super.setScaleType(SCALE_TYPE);
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CircleImageView, defStyleAttr, 0);
-        mBorderWidth = a.getDimensionPixelOffset(R.styleable.CircleImageView_border_width, DEFAULT_BORDER_WIDTH);
+
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CircleImageView, defStyle, 0);
+
+        mBorderWidth = a.getDimensionPixelSize(R.styleable.CircleImageView_border_width, DEFAULT_BORDER_WIDTH);
         mBorderColor = a.getColor(R.styleable.CircleImageView_border_color, DEFAULT_BORDER_COLOR);
+
         a.recycle();
+
         mReady = true;
+
         if (mSetupPending) {
-            setUp();
+            setup();
             mSetupPending = false;
         }
     }
@@ -98,7 +104,7 @@ public class CircleImageView extends ImageView {
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
-        setUp();
+        setup();
     }
 
     public int getBorderColor() {
@@ -125,28 +131,28 @@ public class CircleImageView extends ImageView {
         }
 
         mBorderWidth = borderWidth;
-        setUp();
+        setup();
     }
 
     @Override
     public void setImageBitmap(Bitmap bm) {
         super.setImageBitmap(bm);
         mBitmap = bm;
-        setUp();
+        setup();
     }
 
     @Override
     public void setImageDrawable(Drawable drawable) {
         super.setImageDrawable(drawable);
         mBitmap = getBitmapFromDrawable(drawable);
-        setUp();
+        setup();
     }
 
     @Override
     public void setImageResource(int resId) {
         super.setImageResource(resId);
         mBitmap = getBitmapFromDrawable(getDrawable());
-        setUp();
+        setup();
     }
 
     private Bitmap getBitmapFromDrawable(Drawable drawable) {
@@ -176,15 +182,18 @@ public class CircleImageView extends ImageView {
         }
     }
 
-    private void setUp() {
+    private void setup() {
         if (!mReady) {
             mSetupPending = true;
             return;
         }
+
         if (mBitmap == null) {
             return;
         }
+
         mBitmapShader = new BitmapShader(mBitmap, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
+
         mBitmapPaint.setAntiAlias(true);
         mBitmapPaint.setShader(mBitmapShader);
 
@@ -199,7 +208,7 @@ public class CircleImageView extends ImageView {
         mBorderRect.set(0, 0, getWidth(), getHeight());
         mBorderRadius = Math.min((mBorderRect.height() - mBorderWidth) / 2, (mBorderRect.width() - mBorderWidth) / 2);
 
-        mDrawableRect.set(0, 0, mBitmapWidth, mBitmapHeight);
+        mDrawableRect.set(mBorderWidth, mBorderWidth, mBorderRect.width() - mBorderWidth, mBorderRect.height() - mBorderWidth);
         mDrawableRadius = Math.min(mDrawableRect.height() / 2, mDrawableRect.width() / 2);
 
         updateShaderMatrix();
@@ -210,6 +219,7 @@ public class CircleImageView extends ImageView {
         float scale;
         float dx = 0;
         float dy = 0;
+
         mShaderMatrix.set(null);
 
         if (mBitmapWidth * mDrawableRect.height() > mDrawableRect.width() * mBitmapHeight) {
@@ -225,4 +235,5 @@ public class CircleImageView extends ImageView {
 
         mBitmapShader.setLocalMatrix(mShaderMatrix);
     }
+
 }
