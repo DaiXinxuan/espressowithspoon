@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spoon Execution</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" rel="stylesheet">
+        <link href="static/bootstrap.min.css" rel="stylesheet">
+        <link href="static/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="static/spoon.css" rel="stylesheet">
+        <link href="static/nivo-slider.css" rel="stylesheet">
+        <script src="static/jquery.min.js"></script>
+        <script src="static/bootstrap.min.js"></script>
+        <script src="static/jquery.nivo.slider.pack.js"></script>
+        <meta name="description" content="">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="hero-unit">
+                <h1 id="title"></h1>
+                <p id="subtitle"></p>
+            </div>
+
+            <div class="row">
+                <div id="test-info" class="span6">
+                    <!-- Current test information -->
+                    <div id="current-test-info" class="test-result">
+                        <h1 id="test-name"></h1>
+                        <h3 id="test-class-name"></h3>
+                        <h3 id="caption"></h3>
+                    </div>
+
+                    <!-- Overall test information -->
+                    <div id="overall-test-info">
+                        <p>Displaying test <span id="current-test-number">0</span> of <span id="total-test-size">0</span></p>
+                        <p>Tests executed on <span id="test-date">星期二, 三月 01, 10:00 上午</span>, in <span id="duration">2 minutes</span></p>
+                    </div>
+                </div>
+                <div id="slider-wrapper" class="theme-default span6">
+                    <div id="slider" class="nivoSlider"></div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var devices = [
+  {
+    "serial": "BH902VE44C",
+    "name": "Sony E6683",
+    "details": "Running Android 5.1.1 (API 22) with locale zh-HK",
+    "testResults": [
+      {
+        "classSimpleName": "MainActivityTest",
+        "methodPrettyName": "1",
+        "serial": "BH902VE44C",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 0,
+            "path": "image/BH902VE44C/com.philips.pins.espresso.demo.MainActivityTest/test1/1456797658410_initial_state.png",
+            "caption": "Initial State"
+          },
+          {
+            "id": 1,
+            "path": "image/BH902VE44C/com.philips.pins.espresso.demo.MainActivityTest/test1/1456797693169_after_test.png",
+            "caption": "After Test"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "MainActivityTest",
+        "methodPrettyName": "2",
+        "serial": "BH902VE44C",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 2,
+            "path": "image/BH902VE44C/com.philips.pins.espresso.demo.MainActivityTest/test2/1456797693806_initial_state.png",
+            "caption": "Initial State"
+          },
+          {
+            "id": 3,
+            "path": "image/BH902VE44C/com.philips.pins.espresso.demo.MainActivityTest/test2/1456797694702_input_username.png",
+            "caption": "Input Username"
+          },
+          {
+            "id": 4,
+            "path": "image/BH902VE44C/com.philips.pins.espresso.demo.MainActivityTest/test2/1456797696369_after_test.png",
+            "caption": "After Test"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "MainActivityTest",
+        "methodPrettyName": "3",
+        "serial": "BH902VE44C",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 5,
+            "path": "image/BH902VE44C/com.philips.pins.espresso.demo.MainActivityTest/test3/1456797696980_initial_state.png",
+            "caption": "Initial State"
+          },
+          {
+            "id": 6,
+            "path": "image/BH902VE44C/com.philips.pins.espresso.demo.MainActivityTest/test3/1456797698248_input_data.png",
+            "caption": "Input Data"
+          },
+          {
+            "id": 7,
+            "path": "image/BH902VE44C/com.philips.pins.espresso.demo.MainActivityTest/test3/1456797699914_after_test.png",
+            "caption": "After Test"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "MainActivityTest",
+        "methodPrettyName": "4",
+        "serial": "BH902VE44C",
+        "status": "fail",
+        "screenshots": [
+          {
+            "id": 8,
+            "path": "image/BH902VE44C/com.philips.pins.espresso.demo.MainActivityTest/test4/1456797700597_initial_state.png",
+            "caption": "Initial State"
+          },
+          {
+            "id": 9,
+            "path": "image/BH902VE44C/com.philips.pins.espresso.demo.MainActivityTest/test4/1456797701832_input_data.png",
+            "caption": "Input Data"
+          },
+          {
+            "id": 10,
+            "path": "image/BH902VE44C/com.philips.pins.espresso.demo.MainActivityTest/test4/1456797703468_after_test.png",
+            "caption": "After Test"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "MainActivityTest",
+        "methodPrettyName": "5",
+        "serial": "BH902VE44C",
+        "status": "fail",
+        "screenshots": [
+          {
+            "id": 11,
+            "path": "image/BH902VE44C/com.philips.pins.espresso.demo.MainActivityTest/test5/1456797704092_initial_state.png",
+            "caption": "Initial State"
+          },
+          {
+            "id": 12,
+            "path": "image/BH902VE44C/com.philips.pins.espresso.demo.MainActivityTest/test5/1456797705296_input_data.png",
+            "caption": "Input Data"
+          },
+          {
+            "id": 13,
+            "path": "image/BH902VE44C/com.philips.pins.espresso.demo.MainActivityTest/test5/1456797706935_after_test.png",
+            "caption": "After Test"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "MainActivityTest",
+        "methodPrettyName": "6",
+        "serial": "BH902VE44C",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 14,
+            "path": "image/BH902VE44C/com.philips.pins.espresso.demo.MainActivityTest/test6/1456797707541_initial_state.png",
+            "caption": "Initial State"
+          },
+          {
+            "id": 15,
+            "path": "image/BH902VE44C/com.philips.pins.espresso.demo.MainActivityTest/test6/1456797708768_input_data.png",
+            "caption": "Input Data"
+          },
+          {
+            "id": 16,
+            "path": "image/BH902VE44C/com.philips.pins.espresso.demo.MainActivityTest/test6/1456797710418_after_test.png",
+            "caption": "After Test"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "MainActivityTest",
+        "methodPrettyName": "7",
+        "serial": "BH902VE44C",
+        "status": "fail",
+        "screenshots": [
+          {
+            "id": 17,
+            "path": "image/BH902VE44C/com.philips.pins.espresso.demo.MainActivityTest/test7/1456797711020_initial_state.png",
+            "caption": "Initial State"
+          },
+          {
+            "id": 18,
+            "path": "image/BH902VE44C/com.philips.pins.espresso.demo.MainActivityTest/test7/1456797712284_input_data.png",
+            "caption": "Input Data"
+          },
+          {
+            "id": 19,
+            "path": "image/BH902VE44C/com.philips.pins.espresso.demo.MainActivityTest/test7/1456797713951_after_test.png",
+            "caption": "After Test"
+          }
+        ]
+      }
+    ]
+  }
+];
+
+            function updateDevice(device) {
+                $('#title').text(device.name);
+                $('#subtitle').text(device.details);
+                $('#total-test-size').text(device.testResults.length)
+
+                testResultIndex = 0
+                updateTest(device.testResults[testResultIndex]);
+            }
+
+            function updateTest(testResult) {
+                $('#current-test-info').removeClass('pass fail error')
+                $('#current-test-info').addClass(testResult.status)
+                $('#test-name').text(testResult.methodPrettyName)
+                $('#test-class-name').text(testResult.classSimpleName)
+
+                $("#slider").empty();
+                $.each(testResult.screenshots, function(index, screenshot) {
+                    tag = '<img alt="' + screenshot.caption + '" src="' + screenshot.path + '" />'
+                    $('#slider').append(tag)
+                });
+
+                $('#current-test-number').text(testResultIndex + 1)
+                screenshotIndex = 0
+
+                // Re-initialize the slider with the new slides
+                $('#slider').nivoSlider({
+                    effect: 'boxRainGrow', // Specify sets like: 'fold,fade,sliceDown'
+                    animSpeed: 500, // Slide transition speed
+                    pauseTime: 3000, // How long each slide will show
+                    directionNav: false, // Next & Prev navigation
+                    controlNavThumbs: false, // Use thumbnails for Control Nav
+                    pauseOnHover: false, // Stop animation while hovering
+                    manualAdvance: false, // Force manual transitions
+                    beforeChange: function(){ // Triggers before a slide transition
+                        screenshotIndex++
+                        if(devices[deviceIndex].testResults[testResultIndex].screenshots[screenshotIndex]) {
+                            $('#caption').text(devices[deviceIndex].testResults[testResultIndex].screenshots[screenshotIndex].caption)
+                        }
+                    },
+                    lastSlide: function(){ // Triggers when last slide is shown
+                        $('#caption').text("")
+                    },
+                    afterLoad: function(){ // Triggers when slider has loaded
+                        $('#caption').text(devices[deviceIndex].testResults[testResultIndex].screenshots[screenshotIndex].caption)
+                    },
+                    slideshowEnd: function() { // Triggers after all slides have been shown
+                        nextTestResult()
+                    }
+                });
+
+                // There's a bug in Nivo where it doesn't know what to do w/ only one screenshot.
+                if(testResult.screenshots.length == 1) {
+                    window.setTimeout(nextTestResult, 3000)
+                }
+            }
+
+            function nextTestResult() {
+                $('#slider').data('nivoslider').stop();
+                $('#slider-wrapper').empty()
+                $('#slider-wrapper').append($('<div id="slider" class="nivoSlider"/>'))
+
+                testResultIndex++
+                tests = devices[deviceIndex].testResults
+                if(testResultIndex < tests.length) {
+                    updateTest(tests[testResultIndex])
+                } else {
+                    nextDevice()
+                }
+            }
+
+            function nextDevice() {
+                if(deviceIndex == devices.length - 1) {
+                    location.reload() // Reload at end to load new spoon results.
+                } else {
+                    deviceIndex++
+                    updateDevice(devices[deviceIndex])
+                }
+            }
+
+            // If we start feeling fancy we could create an actual class. Until then, we're global.
+            var deviceIndex = 0;
+            var testResultIndex = 0;
+            var screenshotIndex = 0;
+
+            // Start it off
+            $(function() {
+                updateDevice(devices[deviceIndex]);
+            });
+        </script>
+    </body>
+</html>

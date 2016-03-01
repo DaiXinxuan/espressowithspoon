@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
+import com.squareup.spoon.Spoon;
+
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -43,6 +45,7 @@ public class MainActivityTest {
      */
     @Test
     public void test1() {
+        Spoon.screenshot(mActivityRule.getActivity(), "initial_state");
         onView(withId(R.id.login)).perform(click());
         try {
             Thread.sleep(1000);
@@ -52,6 +55,7 @@ public class MainActivityTest {
         onView(withText (activity.getString(R.string.empty_user)))
                 .inRoot(withDecorView(not(is(activity.getWindow().getDecorView()))))
                 .check(matches(isDisplayed()));
+        Spoon.screenshot(mActivityRule.getActivity(), "after_test");
     }
 
 
@@ -60,7 +64,9 @@ public class MainActivityTest {
      */
     @Test
     public void test2() {
-        onView(withId(R.id.username)).perform(typeText("18781985619"),closeSoftKeyboard());
+        Spoon.screenshot(activity, "initial_state");
+        onView(withId(R.id.username)).perform(typeText("18781985619"), closeSoftKeyboard());
+        Spoon.screenshot(activity, "input_username");
         onView(withId(R.id.login)).perform(click());
         try {
             Thread.sleep(1000);
@@ -69,6 +75,7 @@ public class MainActivityTest {
         }
         onView(withText(activity.getString(R.string.empty_pass))).
                 inRoot(withDecorView(not(is(activity.getWindow().getDecorView())))).check(matches(isDisplayed()));
+        Spoon.screenshot(activity, "after_test");
     }
 
     /**
@@ -76,14 +83,17 @@ public class MainActivityTest {
      */
     @Test
     public void test3() {
-        onView(withId(R.id.username)).perform(typeText("18781985619"),closeSoftKeyboard());
-        onView(withId(R.id.password)).perform(typeText("19950213"),closeSoftKeyboard());
+        Spoon.screenshot(activity, "initial_state");
+        onView(withId(R.id.username)).perform(typeText("18781985619"), closeSoftKeyboard());
+        onView(withId(R.id.password)).perform(typeText("abc"), closeSoftKeyboard());
+        Spoon.screenshot(activity, "input_data");
         onView(withId(R.id.regist)).perform(click());
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        Spoon.screenshot(activity, "after_test");
         onView(withText(activity.getString(R.string.regist_success))).
                 inRoot(withDecorView(not(is(activity.getWindow().getDecorView())))).check(matches(isDisplayed()));
     }
@@ -93,14 +103,17 @@ public class MainActivityTest {
      */
     @Test
     public void test4() {
-        onView(withId(R.id.username)).perform(typeText("18781985619"),closeSoftKeyboard());
-        onView(withId(R.id.password)).perform(typeText("19950212"),closeSoftKeyboard());
+        Spoon.screenshot(activity, "initial_state");
+        onView(withId(R.id.username)).perform(typeText("18781985619"), closeSoftKeyboard());
+        onView(withId(R.id.password)).perform(typeText("abc"), closeSoftKeyboard());
+        Spoon.screenshot(activity, "input_data");
         onView(withId(R.id.regist)).perform(click());
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        Spoon.screenshot(activity, "after_test");
         onView(withText(activity.getString(R.string.user_resued))).
                 inRoot(withDecorView(not(is(activity.getWindow().getDecorView())))).check(matches(isDisplayed()));
     }
@@ -110,14 +123,17 @@ public class MainActivityTest {
      */
     @Test
     public void test5() {
+        Spoon.screenshot(activity, "initial_state");
         onView(withId(R.id.username)).perform(typeText("18781985619"),closeSoftKeyboard());
-        onView(withId(R.id.password)).perform(typeText("19950213"),closeSoftKeyboard());
+        onView(withId(R.id.password)).perform(typeText("abc"), closeSoftKeyboard());
+        Spoon.screenshot(activity, "input_data");
         onView(withId(R.id.login)).perform(click());
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        Spoon.screenshot(activity, "after_test");
         onView(withText(activity.getString(R.string.login_success))).
                 inRoot(withDecorView(not(is(activity.getWindow().getDecorView())))).check(matches(isDisplayed()));
     }
@@ -127,14 +143,17 @@ public class MainActivityTest {
      */
     @Test
     public void test6() {
+        Spoon.screenshot(activity, "initial_state");
         onView(withId(R.id.username)).perform(typeText("18781985618"),closeSoftKeyboard());
-        onView(withId(R.id.password)).perform(typeText("19950213"),closeSoftKeyboard());
+        onView(withId(R.id.password)).perform(typeText("abc"), closeSoftKeyboard());
+        Spoon.screenshot(activity, "input_data");
         onView(withId(R.id.login)).perform(click());
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        Spoon.screenshot(activity, "after_test");
         onView(withText(activity.getString(R.string.nonexisten_user))).
                 inRoot(withDecorView(not(is(activity.getWindow().getDecorView())))).check(matches(isDisplayed()));
     }
@@ -144,14 +163,17 @@ public class MainActivityTest {
      */
     @Test
     public void test7() {
-        onView(withId(R.id.username)).perform(typeText("18781985619"),closeSoftKeyboard());
-        onView(withId(R.id.password)).perform(typeText("19950212"),closeSoftKeyboard());
+        Spoon.screenshot(activity, "initial_state");
+        onView(withId(R.id.username)).perform(typeText("18781985619"), closeSoftKeyboard());
+        onView(withId(R.id.password)).perform(typeText("abcd"), closeSoftKeyboard());
+        Spoon.screenshot(activity, "input_data");
         onView(withId(R.id.login)).perform(click());
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        Spoon.screenshot(activity, "after_test");
         onView(withText(activity.getString(R.string.login_fail))).
                 inRoot(withDecorView(not(is(activity.getWindow().getDecorView())))).check(matches(isDisplayed()));
     }

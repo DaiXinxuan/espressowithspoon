@@ -1,0 +1,980 @@
+{
+  "title": "Spoon Execution",
+  "started": 1456797649429,
+  "duration": 120,
+  "results": {
+    "BH902VE44C": {
+      "installFailed": false,
+      "deviceDetails": {
+        "model": "E6683",
+        "manufacturer": "Sony",
+        "version": "5.1.1",
+        "apiLevel": 22,
+        "language": "zh",
+        "region": "HK",
+        "isEmulator": false
+      },
+      "testResults": [
+        [
+          {
+            "className": "com.philips.pins.espresso.demo.MainActivityTest",
+            "methodName": "test1"
+          },
+          {
+            "status": "PASS",
+            "duration": 35,
+            "screenshots": [
+              "D:\\Espresso\\spoon-output\\image\\BH902VE44C\\com.philips.pins.espresso.demo.MainActivityTest\\test1\\1456797658410_initial_state.png",
+              "D:\\Espresso\\spoon-output\\image\\BH902VE44C\\com.philips.pins.espresso.demo.MainActivityTest\\test1\\1456797693169_after_test.png"
+            ],
+            "files": [],
+            "animatedGif": "D:\\Espresso\\spoon-output\\image\\BH902VE44C\\com.philips.pins.espresso.demo.MainActivityTest\\test1.gif",
+            "log": []
+          }
+        ],
+        [
+          {
+            "className": "com.philips.pins.espresso.demo.MainActivityTest",
+            "methodName": "test2"
+          },
+          {
+            "status": "PASS",
+            "duration": 3,
+            "screenshots": [
+              "D:\\Espresso\\spoon-output\\image\\BH902VE44C\\com.philips.pins.espresso.demo.MainActivityTest\\test2\\1456797693806_initial_state.png",
+              "D:\\Espresso\\spoon-output\\image\\BH902VE44C\\com.philips.pins.espresso.demo.MainActivityTest\\test2\\1456797694702_input_username.png",
+              "D:\\Espresso\\spoon-output\\image\\BH902VE44C\\com.philips.pins.espresso.demo.MainActivityTest\\test2\\1456797696369_after_test.png"
+            ],
+            "files": [],
+            "animatedGif": "D:\\Espresso\\spoon-output\\image\\BH902VE44C\\com.philips.pins.espresso.demo.MainActivityTest\\test2.gif",
+            "log": []
+          }
+        ],
+        [
+          {
+            "className": "com.philips.pins.espresso.demo.MainActivityTest",
+            "methodName": "test3"
+          },
+          {
+            "status": "PASS",
+            "duration": 3,
+            "screenshots": [
+              "D:\\Espresso\\spoon-output\\image\\BH902VE44C\\com.philips.pins.espresso.demo.MainActivityTest\\test3\\1456797696980_initial_state.png",
+              "D:\\Espresso\\spoon-output\\image\\BH902VE44C\\com.philips.pins.espresso.demo.MainActivityTest\\test3\\1456797698248_input_data.png",
+              "D:\\Espresso\\spoon-output\\image\\BH902VE44C\\com.philips.pins.espresso.demo.MainActivityTest\\test3\\1456797699914_after_test.png"
+            ],
+            "files": [],
+            "animatedGif": "D:\\Espresso\\spoon-output\\image\\BH902VE44C\\com.philips.pins.espresso.demo.MainActivityTest\\test3.gif",
+            "log": []
+          }
+        ],
+        [
+          {
+            "className": "com.philips.pins.espresso.demo.MainActivityTest",
+            "methodName": "test4"
+          },
+          {
+            "status": "FAIL",
+            "exception": {
+              "className": "android.support.test.espresso.NoMatchingViewException",
+              "message": "No views in hierarchy found matching: with text: is \"Username has already been registered\"\n\nView Hierarchy:\n+\u003eLinearLayout{id\u003d-1, visibility\u003dVISIBLE, width\u003d514, height\u003d132, has-focus\u003dfalse, has-focusable\u003dfalse, has-window-focus\u003dfalse, is-clickable\u003dfalse, is-enabled\u003dtrue, is-focused\u003dfalse, is-focusable\u003dfalse, is-layout-requested\u003dfalse, is-selected\u003dfalse, root-is-layout-requested\u003dfalse, has-input-connection\u003dfalse, x\u003d0.0, y\u003d0.0, child-count\u003d1}\n|\n+-\u003eTextView{id\u003d16908299, res-name\u003dmessage, visibility\u003dVISIBLE, width\u003d364, height\u003d66, has-focus\u003dfalse, has-focusable\u003dfalse, has-window-focus\u003dfalse, is-clickable\u003dfalse, is-enabled\u003dtrue, is-focused\u003dfalse, is-focusable\u003dfalse, is-layout-requested\u003dfalse, is-selected\u003dfalse, root-is-layout-requested\u003dfalse, has-input-connection\u003dfalse, x\u003d75.0, y\u003d33.0, text\u003dRegist successfully, input-type\u003d0, ime-target\u003dfalse, has-links\u003dfalse}\n|",
+              "elements": [
+                {
+                  "className": "dalvik.system.VMStack",
+                  "line": 0,
+                  "methodName": "getThreadStackTrace",
+                  "isNative": true
+                },
+                {
+                  "className": "java.lang.Thread",
+                  "fileName": "Thread.java",
+                  "line": 580,
+                  "methodName": "getStackTrace",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 82,
+                  "methodName": "getUserFriendlyError",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 53,
+                  "methodName": "handle",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 184,
+                  "methodName": "runSynchronouslyOnUiThread",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 158,
+                  "methodName": "check",
+                  "isNative": false
+                },
+                {
+                  "className": "com.philips.pins.espresso.demo.MainActivityTest",
+                  "fileName": "MainActivityTest.java",
+                  "line": 118,
+                  "methodName": "test4",
+                  "isNative": false
+                },
+                {
+                  "className": "java.lang.reflect.Method",
+                  "line": 0,
+                  "methodName": "invoke",
+                  "isNative": true
+                },
+                {
+                  "className": "java.lang.reflect.Method",
+                  "fileName": "Method.java",
+                  "line": 372,
+                  "methodName": "invoke",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.model.FrameworkMethod$1",
+                  "fileName": "FrameworkMethod.java",
+                  "line": 50,
+                  "methodName": "runReflectiveCall",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.internal.runners.model.ReflectiveCallable",
+                  "fileName": "ReflectiveCallable.java",
+                  "line": 12,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.model.FrameworkMethod",
+                  "fileName": "FrameworkMethod.java",
+                  "line": 47,
+                  "methodName": "invokeExplosively",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.internal.runners.statements.InvokeMethod",
+                  "fileName": "InvokeMethod.java",
+                  "line": 17,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.internal.runners.statements.RunBefores",
+                  "fileName": "RunBefores.java",
+                  "line": 26,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.internal.statement.UiThreadStatement",
+                  "fileName": "UiThreadStatement.java",
+                  "line": 55,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.rule.ActivityTestRule$ActivityStatement",
+                  "fileName": "ActivityTestRule.java",
+                  "line": 257,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.rules.RunRules",
+                  "fileName": "RunRules.java",
+                  "line": 20,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 325,
+                  "methodName": "runLeaf",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.BlockJUnit4ClassRunner",
+                  "fileName": "BlockJUnit4ClassRunner.java",
+                  "line": 78,
+                  "methodName": "runChild",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.BlockJUnit4ClassRunner",
+                  "fileName": "BlockJUnit4ClassRunner.java",
+                  "line": 57,
+                  "methodName": "runChild",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$3",
+                  "fileName": "ParentRunner.java",
+                  "line": 290,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$1",
+                  "fileName": "ParentRunner.java",
+                  "line": 71,
+                  "methodName": "schedule",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 288,
+                  "methodName": "runChildren",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 58,
+                  "methodName": "access$000",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$2",
+                  "fileName": "ParentRunner.java",
+                  "line": 268,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 363,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.Suite",
+                  "fileName": "Suite.java",
+                  "line": 128,
+                  "methodName": "runChild",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.Suite",
+                  "fileName": "Suite.java",
+                  "line": 27,
+                  "methodName": "runChild",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$3",
+                  "fileName": "ParentRunner.java",
+                  "line": 290,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$1",
+                  "fileName": "ParentRunner.java",
+                  "line": 71,
+                  "methodName": "schedule",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 288,
+                  "methodName": "runChildren",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 58,
+                  "methodName": "access$000",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$2",
+                  "fileName": "ParentRunner.java",
+                  "line": 268,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 363,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runner.JUnitCore",
+                  "fileName": "JUnitCore.java",
+                  "line": 137,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runner.JUnitCore",
+                  "fileName": "JUnitCore.java",
+                  "line": 115,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.internal.runner.TestExecutor",
+                  "fileName": "TestExecutor.java",
+                  "line": 54,
+                  "methodName": "execute",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.runner.AndroidJUnitRunner",
+                  "fileName": "AndroidJUnitRunner.java",
+                  "line": 228,
+                  "methodName": "onStart",
+                  "isNative": false
+                },
+                {
+                  "className": "android.app.Instrumentation$InstrumentationThread",
+                  "fileName": "Instrumentation.java",
+                  "line": 1861,
+                  "methodName": "run",
+                  "isNative": false
+                }
+              ]
+            },
+            "duration": 3,
+            "screenshots": [
+              "D:\\Espresso\\spoon-output\\image\\BH902VE44C\\com.philips.pins.espresso.demo.MainActivityTest\\test4\\1456797700597_initial_state.png",
+              "D:\\Espresso\\spoon-output\\image\\BH902VE44C\\com.philips.pins.espresso.demo.MainActivityTest\\test4\\1456797701832_input_data.png",
+              "D:\\Espresso\\spoon-output\\image\\BH902VE44C\\com.philips.pins.espresso.demo.MainActivityTest\\test4\\1456797703468_after_test.png"
+            ],
+            "files": [],
+            "animatedGif": "D:\\Espresso\\spoon-output\\image\\BH902VE44C\\com.philips.pins.espresso.demo.MainActivityTest\\test4.gif",
+            "log": []
+          }
+        ],
+        [
+          {
+            "className": "com.philips.pins.espresso.demo.MainActivityTest",
+            "methodName": "test5"
+          },
+          {
+            "status": "FAIL",
+            "exception": {
+              "className": "android.support.test.espresso.NoMatchingViewException",
+              "message": "No views in hierarchy found matching: with text: is \"Successful login\"\n\nView Hierarchy:\n+\u003eLinearLayout{id\u003d-1, visibility\u003dVISIBLE, width\u003d693, height\u003d132, has-focus\u003dfalse, has-focusable\u003dfalse, has-window-focus\u003dfalse, is-clickable\u003dfalse, is-enabled\u003dtrue, is-focused\u003dfalse, is-focusable\u003dfalse, is-layout-requested\u003dfalse, is-selected\u003dfalse, root-is-layout-requested\u003dfalse, has-input-connection\u003dfalse, x\u003d0.0, y\u003d0.0, child-count\u003d1}\n|\n+-\u003eTextView{id\u003d16908299, res-name\u003dmessage, visibility\u003dVISIBLE, width\u003d543, height\u003d66, has-focus\u003dfalse, has-focusable\u003dfalse, has-window-focus\u003dfalse, is-clickable\u003dfalse, is-enabled\u003dtrue, is-focused\u003dfalse, is-focusable\u003dfalse, is-layout-requested\u003dfalse, is-selected\u003dfalse, root-is-layout-requested\u003dfalse, has-input-connection\u003dfalse, x\u003d75.0, y\u003d33.0, text\u003dThe username does not exist, input-type\u003d0, ime-target\u003dfalse, has-links\u003dfalse}\n|",
+              "elements": [
+                {
+                  "className": "dalvik.system.VMStack",
+                  "line": 0,
+                  "methodName": "getThreadStackTrace",
+                  "isNative": true
+                },
+                {
+                  "className": "java.lang.Thread",
+                  "fileName": "Thread.java",
+                  "line": 580,
+                  "methodName": "getStackTrace",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 82,
+                  "methodName": "getUserFriendlyError",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 53,
+                  "methodName": "handle",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 184,
+                  "methodName": "runSynchronouslyOnUiThread",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 158,
+                  "methodName": "check",
+                  "isNative": false
+                },
+                {
+                  "className": "com.philips.pins.espresso.demo.MainActivityTest",
+                  "fileName": "MainActivityTest.java",
+                  "line": 138,
+                  "methodName": "test5",
+                  "isNative": false
+                },
+                {
+                  "className": "java.lang.reflect.Method",
+                  "line": 0,
+                  "methodName": "invoke",
+                  "isNative": true
+                },
+                {
+                  "className": "java.lang.reflect.Method",
+                  "fileName": "Method.java",
+                  "line": 372,
+                  "methodName": "invoke",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.model.FrameworkMethod$1",
+                  "fileName": "FrameworkMethod.java",
+                  "line": 50,
+                  "methodName": "runReflectiveCall",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.internal.runners.model.ReflectiveCallable",
+                  "fileName": "ReflectiveCallable.java",
+                  "line": 12,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.model.FrameworkMethod",
+                  "fileName": "FrameworkMethod.java",
+                  "line": 47,
+                  "methodName": "invokeExplosively",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.internal.runners.statements.InvokeMethod",
+                  "fileName": "InvokeMethod.java",
+                  "line": 17,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.internal.runners.statements.RunBefores",
+                  "fileName": "RunBefores.java",
+                  "line": 26,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.internal.statement.UiThreadStatement",
+                  "fileName": "UiThreadStatement.java",
+                  "line": 55,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.rule.ActivityTestRule$ActivityStatement",
+                  "fileName": "ActivityTestRule.java",
+                  "line": 257,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.rules.RunRules",
+                  "fileName": "RunRules.java",
+                  "line": 20,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 325,
+                  "methodName": "runLeaf",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.BlockJUnit4ClassRunner",
+                  "fileName": "BlockJUnit4ClassRunner.java",
+                  "line": 78,
+                  "methodName": "runChild",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.BlockJUnit4ClassRunner",
+                  "fileName": "BlockJUnit4ClassRunner.java",
+                  "line": 57,
+                  "methodName": "runChild",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$3",
+                  "fileName": "ParentRunner.java",
+                  "line": 290,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$1",
+                  "fileName": "ParentRunner.java",
+                  "line": 71,
+                  "methodName": "schedule",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 288,
+                  "methodName": "runChildren",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 58,
+                  "methodName": "access$000",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$2",
+                  "fileName": "ParentRunner.java",
+                  "line": 268,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 363,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.Suite",
+                  "fileName": "Suite.java",
+                  "line": 128,
+                  "methodName": "runChild",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.Suite",
+                  "fileName": "Suite.java",
+                  "line": 27,
+                  "methodName": "runChild",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$3",
+                  "fileName": "ParentRunner.java",
+                  "line": 290,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$1",
+                  "fileName": "ParentRunner.java",
+                  "line": 71,
+                  "methodName": "schedule",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 288,
+                  "methodName": "runChildren",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 58,
+                  "methodName": "access$000",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$2",
+                  "fileName": "ParentRunner.java",
+                  "line": 268,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 363,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runner.JUnitCore",
+                  "fileName": "JUnitCore.java",
+                  "line": 137,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runner.JUnitCore",
+                  "fileName": "JUnitCore.java",
+                  "line": 115,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.internal.runner.TestExecutor",
+                  "fileName": "TestExecutor.java",
+                  "line": 54,
+                  "methodName": "execute",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.runner.AndroidJUnitRunner",
+                  "fileName": "AndroidJUnitRunner.java",
+                  "line": 228,
+                  "methodName": "onStart",
+                  "isNative": false
+                },
+                {
+                  "className": "android.app.Instrumentation$InstrumentationThread",
+                  "fileName": "Instrumentation.java",
+                  "line": 1861,
+                  "methodName": "run",
+                  "isNative": false
+                }
+              ]
+            },
+            "duration": 3,
+            "screenshots": [
+              "D:\\Espresso\\spoon-output\\image\\BH902VE44C\\com.philips.pins.espresso.demo.MainActivityTest\\test5\\1456797704092_initial_state.png",
+              "D:\\Espresso\\spoon-output\\image\\BH902VE44C\\com.philips.pins.espresso.demo.MainActivityTest\\test5\\1456797705296_input_data.png",
+              "D:\\Espresso\\spoon-output\\image\\BH902VE44C\\com.philips.pins.espresso.demo.MainActivityTest\\test5\\1456797706935_after_test.png"
+            ],
+            "files": [],
+            "animatedGif": "D:\\Espresso\\spoon-output\\image\\BH902VE44C\\com.philips.pins.espresso.demo.MainActivityTest\\test5.gif",
+            "log": []
+          }
+        ],
+        [
+          {
+            "className": "com.philips.pins.espresso.demo.MainActivityTest",
+            "methodName": "test6"
+          },
+          {
+            "status": "PASS",
+            "duration": 3,
+            "screenshots": [
+              "D:\\Espresso\\spoon-output\\image\\BH902VE44C\\com.philips.pins.espresso.demo.MainActivityTest\\test6\\1456797707541_initial_state.png",
+              "D:\\Espresso\\spoon-output\\image\\BH902VE44C\\com.philips.pins.espresso.demo.MainActivityTest\\test6\\1456797708768_input_data.png",
+              "D:\\Espresso\\spoon-output\\image\\BH902VE44C\\com.philips.pins.espresso.demo.MainActivityTest\\test6\\1456797710418_after_test.png"
+            ],
+            "files": [],
+            "animatedGif": "D:\\Espresso\\spoon-output\\image\\BH902VE44C\\com.philips.pins.espresso.demo.MainActivityTest\\test6.gif",
+            "log": []
+          }
+        ],
+        [
+          {
+            "className": "com.philips.pins.espresso.demo.MainActivityTest",
+            "methodName": "test7"
+          },
+          {
+            "status": "FAIL",
+            "exception": {
+              "className": "android.support.test.espresso.NoMatchingViewException",
+              "message": "No views in hierarchy found matching: with text: is \"Login failed\"\n\nView Hierarchy:\n+\u003eLinearLayout{id\u003d-1, visibility\u003dVISIBLE, width\u003d693, height\u003d132, has-focus\u003dfalse, has-focusable\u003dfalse, has-window-focus\u003dfalse, is-clickable\u003dfalse, is-enabled\u003dtrue, is-focused\u003dfalse, is-focusable\u003dfalse, is-layout-requested\u003dfalse, is-selected\u003dfalse, root-is-layout-requested\u003dfalse, has-input-connection\u003dfalse, x\u003d0.0, y\u003d0.0, child-count\u003d1}\n|\n+-\u003eTextView{id\u003d16908299, res-name\u003dmessage, visibility\u003dVISIBLE, width\u003d543, height\u003d66, has-focus\u003dfalse, has-focusable\u003dfalse, has-window-focus\u003dfalse, is-clickable\u003dfalse, is-enabled\u003dtrue, is-focused\u003dfalse, is-focusable\u003dfalse, is-layout-requested\u003dfalse, is-selected\u003dfalse, root-is-layout-requested\u003dfalse, has-input-connection\u003dfalse, x\u003d75.0, y\u003d33.0, text\u003dThe username does not exist, input-type\u003d0, ime-target\u003dfalse, has-links\u003dfalse}\n|",
+              "elements": [
+                {
+                  "className": "dalvik.system.VMStack",
+                  "line": 0,
+                  "methodName": "getThreadStackTrace",
+                  "isNative": true
+                },
+                {
+                  "className": "java.lang.Thread",
+                  "fileName": "Thread.java",
+                  "line": 580,
+                  "methodName": "getStackTrace",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 82,
+                  "methodName": "getUserFriendlyError",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 53,
+                  "methodName": "handle",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 184,
+                  "methodName": "runSynchronouslyOnUiThread",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 158,
+                  "methodName": "check",
+                  "isNative": false
+                },
+                {
+                  "className": "com.philips.pins.espresso.demo.MainActivityTest",
+                  "fileName": "MainActivityTest.java",
+                  "line": 178,
+                  "methodName": "test7",
+                  "isNative": false
+                },
+                {
+                  "className": "java.lang.reflect.Method",
+                  "line": 0,
+                  "methodName": "invoke",
+                  "isNative": true
+                },
+                {
+                  "className": "java.lang.reflect.Method",
+                  "fileName": "Method.java",
+                  "line": 372,
+                  "methodName": "invoke",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.model.FrameworkMethod$1",
+                  "fileName": "FrameworkMethod.java",
+                  "line": 50,
+                  "methodName": "runReflectiveCall",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.internal.runners.model.ReflectiveCallable",
+                  "fileName": "ReflectiveCallable.java",
+                  "line": 12,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.model.FrameworkMethod",
+                  "fileName": "FrameworkMethod.java",
+                  "line": 47,
+                  "methodName": "invokeExplosively",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.internal.runners.statements.InvokeMethod",
+                  "fileName": "InvokeMethod.java",
+                  "line": 17,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.internal.runners.statements.RunBefores",
+                  "fileName": "RunBefores.java",
+                  "line": 26,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.internal.statement.UiThreadStatement",
+                  "fileName": "UiThreadStatement.java",
+                  "line": 55,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.rule.ActivityTestRule$ActivityStatement",
+                  "fileName": "ActivityTestRule.java",
+                  "line": 257,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.rules.RunRules",
+                  "fileName": "RunRules.java",
+                  "line": 20,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 325,
+                  "methodName": "runLeaf",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.BlockJUnit4ClassRunner",
+                  "fileName": "BlockJUnit4ClassRunner.java",
+                  "line": 78,
+                  "methodName": "runChild",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.BlockJUnit4ClassRunner",
+                  "fileName": "BlockJUnit4ClassRunner.java",
+                  "line": 57,
+                  "methodName": "runChild",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$3",
+                  "fileName": "ParentRunner.java",
+                  "line": 290,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$1",
+                  "fileName": "ParentRunner.java",
+                  "line": 71,
+                  "methodName": "schedule",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 288,
+                  "methodName": "runChildren",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 58,
+                  "methodName": "access$000",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$2",
+                  "fileName": "ParentRunner.java",
+                  "line": 268,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 363,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.Suite",
+                  "fileName": "Suite.java",
+                  "line": 128,
+                  "methodName": "runChild",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.Suite",
+                  "fileName": "Suite.java",
+                  "line": 27,
+                  "methodName": "runChild",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$3",
+                  "fileName": "ParentRunner.java",
+                  "line": 290,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$1",
+                  "fileName": "ParentRunner.java",
+                  "line": 71,
+                  "methodName": "schedule",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 288,
+                  "methodName": "runChildren",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 58,
+                  "methodName": "access$000",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$2",
+                  "fileName": "ParentRunner.java",
+                  "line": 268,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 363,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runner.JUnitCore",
+                  "fileName": "JUnitCore.java",
+                  "line": 137,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runner.JUnitCore",
+                  "fileName": "JUnitCore.java",
+                  "line": 115,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.internal.runner.TestExecutor",
+                  "fileName": "TestExecutor.java",
+                  "line": 54,
+                  "methodName": "execute",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.runner.AndroidJUnitRunner",
+                  "fileName": "AndroidJUnitRunner.java",
+                  "line": 228,
+                  "methodName": "onStart",
+                  "isNative": false
+                },
+                {
+                  "className": "android.app.Instrumentation$InstrumentationThread",
+                  "fileName": "Instrumentation.java",
+                  "line": 1861,
+                  "methodName": "run",
+                  "isNative": false
+                }
+              ]
+            },
+            "duration": 3,
+            "screenshots": [
+              "D:\\Espresso\\spoon-output\\image\\BH902VE44C\\com.philips.pins.espresso.demo.MainActivityTest\\test7\\1456797711020_initial_state.png",
+              "D:\\Espresso\\spoon-output\\image\\BH902VE44C\\com.philips.pins.espresso.demo.MainActivityTest\\test7\\1456797712284_input_data.png",
+              "D:\\Espresso\\spoon-output\\image\\BH902VE44C\\com.philips.pins.espresso.demo.MainActivityTest\\test7\\1456797713951_after_test.png"
+            ],
+            "files": [],
+            "animatedGif": "D:\\Espresso\\spoon-output\\image\\BH902VE44C\\com.philips.pins.espresso.demo.MainActivityTest\\test7.gif",
+            "log": []
+          }
+        ]
+      ],
+      "started": 1456797649437,
+      "duration": 57,
+      "exceptions": []
+    }
+  }
+}
